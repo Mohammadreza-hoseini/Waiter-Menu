@@ -23,3 +23,7 @@ def request_waiter(request):
     request = Requests(desk=desk)
     request.save()
     return JsonResponse({'status': 'ok'})
+
+
+def waiter(request):
+    return render(request, 'waiter.html')
